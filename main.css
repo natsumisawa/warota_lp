@@ -1,0 +1,174 @@
+body {
+    background-color: #00056c;
+}
+
+/* ========
+    header
+   ======== */
+
+.ly_header {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ly_inner {
+    text-align: center;
+    height: 100vh;
+}
+
+.ly_inner_cont > img {
+    height: 100vh;
+    /*数枚の円画像を重ねるためにabsoluteで配置*/
+    position: absolute;
+    top: 0;
+    /*左右中央*/
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* sp */
+@media screen and (max-width:640px) {
+    .ly_inner_cont > img {
+        /*スマホは縦幅指定だと大きいので横幅指定*/
+        /*回転する分を見越して80vw*/
+        /*左右中央指定はすでに当たっているので新たにするのは上下中央指定のみ*/
+        width: 80vw;
+        height: auto;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+.el_circle {
+    animation:10s linear infinite rotation;
+}
+
+.el_circle2 {
+    animation:15s linear infinite rotation2;
+}
+
+.el_circle3 {
+    animation:30s linear infinite rotation3;
+}
+
+.el_circle4 {
+    animation:40s linear infinite rotation4;
+}
+
+@keyframes rotation{
+    0%{ transform:rotate(0) }
+    100%{ transform:rotate(360deg)}
+}
+
+@keyframes rotation2{
+    0%{ transform:rotate(10deg) }
+    100%{ transform:rotate(370deg)}
+}
+
+@keyframes rotation3{
+    0%{ transform:rotate(60deg) }
+    100%{ transform:rotate(420deg)}
+}
+
+@keyframes rotation4{
+    0%{ transform:rotate(180deg) }
+    100%{ transform:rotate(540deg)}
+}
+
+.ly_inner_title {
+    /*高さ指定を目一杯にしてflexで上下左右中央*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.el_title {
+    width: 30%;
+    min-width: 300px;
+    z-index: 100;
+}
+
+/* ========
+    content
+   ======== */
+
+.ly_cont {
+    margin: 50px 20px 20px;
+}
+
+.bl_gallery_title img {
+    height: 3vh;
+    margin: 10px 10px 20px;
+}
+
+.bl_gallery_cont {
+    text-align: center;
+}
+
+.bl_gallery_row > a > img {
+    width: 20vw;
+    position:		relative;
+}
+
+.bl_gallery_row > a > img:hover {
+    -webkit-filter: opacity(80%);
+    filter: opacity(58%);
+    transition-duration: 1s;
+}
+
+.bl_gallery_row__col {
+    display: flex;
+    justify-content: space-around;
+}
+
+.el_gallery__flow {
+    animation: float_animation 3s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes float_animation {
+    0% { transform: translateY(0) }
+    33.33333% { transform: translateY(-10px) }
+    66.66667% { transform: translateY(0) }
+    100% { transform: translateY(0) }
+}
+
+.el_gallery__flow2 {
+     animation: float_animation2 3s linear infinite;
+     transform-origin: 50% 50%;
+ }
+
+@keyframes float_animation2 {
+    0% { transform: translateY(0) }
+    33.33333% { transform: translateY(0) }
+    66.66667% { transform: translateY(-10px) }
+    100% { transform: translateY(0) }
+}
+
+.bl_square_gallery_title img {
+    height: 3vh;
+    margin: 10px 10px 40px;
+}
+
+.bl_square_gallery_cont {
+    text-align: center;
+}
+
+.bl_square_gallery_row > a > img {
+    width: 40vw;
+    margin-bottom: 20px;
+}
+
+.bl_square_gallery_row > a > img:hover {
+    -webkit-filter: opacity(80%);
+    filter: opacity(58%);
+    transition-duration: 1s;
+}
