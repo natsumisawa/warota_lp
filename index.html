@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="reset.min.css" media="all">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- modal-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
 </head>
 <body>
+
 <header class="ly_header">
     <div class="ly_inner">
         <div class="ly_inner_cont">
@@ -25,92 +29,183 @@
 <div class="ly_cont">
 
     <div>
-        <div class="bl_gallery_title">
-            <img src="images/profile.png" alt="profile">
-        </div>
+<!--        <div class="bl_gallery_title">-->
+<!--            <img src="images/profile.png" alt="profile">-->
+<!--        </div>-->
         <div class="profile">
             <div class="profile_cont">
-                <img src="images/warotaguma.png">
-                <img src="images/hukidashi1.png">
+                <img src="images/warota.png">
+                <img src="images/warota.png">
+                <img src="images/warota.png">
+                <img src="images/warota.png">
                 <p><img src="images/profile_text.png"></p>
-                <img src="images/hukidashi2.png">
-                <a href="https://www.instagram.com/warota.love/" target="_blank"><img src="images/insta_icon.png"></a>
+                <img src="images/warota.png">
+                <img src="images/warota.png">
+                <img src="images/warota.png">
+                <a href="https://www.instagram.com/warota.love/" target="_blank"><img src="images/insta.png"></a>
             </div>
         </div>
     </div>
 
     <div class="bl_gallery">
-        <div class="bl_gallery_title">
-            <img src="images/works.png" alt="works">
-        </div>
+
+<!--        <div class="bl_gallery_title">-->
+<!--            <img src="images/works.png" alt="works">-->
+<!--        </div>-->
         <div class="bl_gallery_cont">
             <div class="bl_gallery_row bl_gallery_row__f_sa bl_gallery_row__m_0">
-
-                <img src="images/line1.png" alt="linestamp1">
-
-                <img class="close-modal-01" src="images/closebtn.png">
-                <div>
-                    <p>わたしのくちぐせって名前のスタンプだけど言ったことないセリフばかり</p>
+                <a href="#line1" rel="modal:open"><img class="hp__flow" src="images/line1.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="line1" class="modal">
+                    わたしのくちぐせ
+                    <a href="https://store.line.me/stickershop/product/1387437/ja" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
                 </div>
-                <div>
-                    <a href="https://store.line.me/stickershop/product/1387437/ja" target="_blank">LINE STAMP</a>
+
+                <a href="#line2" rel="modal:open"><img class="hp__flow" src="images/line2.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="line2" class="modal">
+                    <span>わろたぐまの今(2020)</span>
+                    <a href="https://store.line.me/stickershop/product/12587345/ja" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
                 </div>
-                <a href="https://store.line.me/stickershop/product/12587345/ja" target="_blank">
-                    <img src="images/line4.png" alt="linestamp4">
-                </a>
             </div>
+
             <div class="bl_gallery_row">
-                <a href="https://store.line.me/emojishop/product/5d2ae112040ab1e99b74afb5/ja" target="_blank">
-                    <img src="images/line3.png" alt="linestamp3">
-                </a>
-                <a href="https://store.line.me/stickershop/product/7774164/ja" target="_blank">
-                    <img src="images/line4.png" alt="linestamp4">
-                </a>
-                <a href="https://store.line.me/stickershop/product/7774164/ja" target="_blank">
-                    <img src="images/line5.png" alt="linestamp5">
-                </a>
+                <a href="#line4" rel="modal:open"><img class="hp__flow" src="images/line4.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="line4" class="modal">
+                    新生わろたぐま
+                    <a href="https://store.line.me/stickershop/product/7774164/ja" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
+                </div>
+
+                <a href="#line3" rel="modal:open"><img class="hp__flow" src="images/line3.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="line3" class="modal">
+                    わろたみにえもじ
+                    <a href="https://store.line.me/emojishop/product/5d2ae112040ab1e99b74afb5/ja" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
+                </div>
+
+                <a href="#line5" rel="modal:open"><img class="hp__flow" src="images/line5.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="line5" class="modal">
+                    ともだちの「わろたみにえもじ」の使い方がうますぎた...無駄な才能を感じた...の図だよ。
+                    <a href="https://store.line.me/emojishop/product/5d2ae112040ab1e99b74afb5/ja" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
+                </div>
             </div>
         </div>
 
         <div class="bl_gallery_cont">
             <div class="bl_gallery_row">
-                <a>
-                    <img src="images/g1.png">
-                </a>
-                <a>
-                    <img src="images/g2.png">
-                </a>
-                <a>
-                    <img src="images/g3.png">
-                </a>
-                <a>
-                    <img src="images/g4.png">
-                </a>
+                <a href="#g1" rel="modal:open"><img src="images/g1.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="g1" class="modal">
+                    わろたえこばっくだよ。おかいものに便利〜。
+                    <a href="https://www.instagram.com/p/CC7mPzDMCGU/" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
+                </div>
+
+                <a href="#g2" rel="modal:open"><img src="images/g2.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="g2" class="modal">
+                    わろたくつしただよ。いつも足下にわろた。
+                    <a href="https://www.instagram.com/p/CCDe50PMuLU/" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
+                </div>
+
+                <a href="#g3" rel="modal:open"><img src="images/g3.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="g3" class="modal">
+                    応募概要レポートだよ。
+                    <a href="https://hrmos.co/ats/about" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
+                </div>
+
+                <a href="#g4" rel="modal:open"><img src="images/g4.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="g4" class="modal">
+                    ししゅうわろただよ。
+                    <a href="https://www.instagram.com/p/B_sOrU3lmAG/" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
+                </div>
+
             </div>
             <div class="bl_gallery_row">
-                <a>
-                    <img src="images/g5.png">
-                </a>
-                <a>
-                    <img src="images/g6.png">
-                </a>
-                <a>
-                    <img src="images/g7.png">
-                </a>
-                <a>
-                    <img src="images/g8.png">
-                </a>
+                <a href="#g5" rel="modal:open"><img src="images/g5.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="g5" class="modal">
+                    カタカナのことばをあてるゲームだよ〜。わろたぶるぶる。
+                    <a href="https://peaceful-jennings-84b31e.netlify.app/" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
+                </div>
+
+                <a href="#g6" rel="modal:open"><img src="images/g6.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="g6" class="modal">
+                    わろたマスキングテープだよ〜。いろんなところに貼るよ。
+                    <a href="https://www.instagram.com/p/Bt5i-ksFvlC/" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
+                </div>
+
+                <a href="#g7" rel="modal:open"><img src="images/g7.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="g7" class="modal">
+                    わろたジェネレーターだよ。わろたみたいなお顔をつくってDLできるよ。
+                    <a href="https://goofy-fermi-86e26a.netlify.app/" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
+                </div>
+
+                <a href="#g8" rel="modal:open"><img src="images/g8.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="g8" class="modal">
+                    わろたLINE BOTだよ。まじでなんの役にも立たないけど会話の相手してくれる。つんでれキャラで。
+                    <a href="https://page.line.me/?accountId=426eyyni&openerPlatform=native&openerKey=timelineHome" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
+                </div>
             </div>
+
             <div class="bl_gallery_row">
-                <a>
-                    <img src="images/g9.png">
-                </a>
-                <a>
-                    <img src="images/g10.png">
-                </a>
-                <a>
-                    <img src="images/g11.png">
-                </a>
+                <a href="#g9" rel="modal:open"><img src="images/g9.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="g9" class="modal">
+                    かわい〜ちぇすわろただよ。駒動かし放題なので、チェスのさしかたの分析ができるよ。無駄にカラフルかモノクロか選べるよ。
+                    <a href="https://sad-curie-9fd502.netlify.app/" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
+                </div>
+
+                <a href="#g10" rel="modal:open"><img src="images/g10.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="g10" class="modal">
+                    スクラムイベント向けのお札。リモートワークのときに印刷して背中に貼ろう。誰にも話しかけられなくなる。
+                    <img class="gallery_10" src="images/zoom4.png">
+                </div>
+
+                <a href="#g11" rel="modal:open"><img src="images/g11.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="g11" class="modal">
+                    おなまえシールめーかーだよ。印刷してモノに貼るんだよ。
+                    <a href="https://sad-lumiere-7132c9.netlify.app/" target="_blank"><img
+                            src="images/link.png"
+                            alt=""></a>
+                </div>
+
                 <a>
                     <img src="images/g12.png">
                 </a>
@@ -119,34 +214,54 @@
     </div>
 
     <div class="bl_gallery">
-        <div class="bl_gallery_title">
-            <img src="images/gallery.png" alt="gallery">
-        </div>
+<!--        <div class="bl_gallery_title">-->
+<!--            <img src="images/gallery.png" alt="gallery">-->
+<!--        </div>-->
+        <p>がぞうわろた。DLしてつかってね〜。</p>
         <div class="bl_gallery_cont">
             <div class="bl_gallery_row">
-                <a>
-                    <img src="images/gg1.png">
-                </a>
-                <a>
-                    <img src="images/gg2.png">
-                </a>
-                <a>
-                    <img src="images/gg3.png">
-                </a>
+                <a href="#gg1" rel="modal:open"><img src="images/gg1.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="gg1" class="modal">
+                    <img src="images/zoom1.png">
+                </div>
+
+                <a href="#gg2" rel="modal:open"><img src="images/gg2.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="gg2" class="modal">
+                    <img src="images/zoom2.png">
+                </div>
+
+                <a href="#gg3" rel="modal:open"><img src="images/gg3.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="gg3" class="modal">
+                    <img src="images/zoom3.png">
+                </div>
             </div>
             <div class="bl_gallery_row bl_gallery_row__h_20">
-                <a>
-                    <img src="images/gg4.png">
-                </a>
-                <a>
-                    <img src="images/gg5.png">
-                </a>
-                <a>
-                    <img src="images/gg6.png">
-                </a>
-                <a>
-                    <img src="images/gg7.png">
-                </a>
+                <a href="#gg4" rel="modal:open"><img src="images/gg4.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="gg4" class="modal">
+                    <img src="images/phone1.png">
+                </div>
+
+                <a href="#gg5" rel="modal:open"><img src="images/gg5.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="gg5" class="modal">
+                    <img src="images/phone2.png">
+                </div>
+
+                <a href="#gg6" rel="modal:open"><img src="images/gg6.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="gg6" class="modal">
+                    <img src="images/phone3.png">
+                </div>
+
+                <a href="#gg7" rel="modal:open"><img src="images/gg7.png"></a>
+                <!-- Modal HTML embedded directly into document -->
+                <div id="gg7" class="modal">
+                    <img src="images/phone4.png">
+                </div>
             </div>
         </div>
     </div>

@@ -1,6 +1,10 @@
 body {
     background-color: #00056c;
 }
+p {
+    text-align: center;
+    color: #ffffff;
+}
 
 #modal-01 {
     text-align: center;
@@ -146,15 +150,13 @@ body {
     width: 5vw;
     height: 5vw;
     margin: 2vw;
-    min-width: 40px;
-    min-height: 40px;
 }
 
-.profile_cont > p {
+.profile_cont > p > img {
     margin: 2vw;
-    width: 10vw;
-    height: 10vw;
-    min-width: 141px;
+    width: 13vw;
+    height: auto;
+    /*min-width: 141px;*/
 }
 
 .bl_gallery_cont {
@@ -192,23 +194,6 @@ body {
     width: auto;
 }
 
-/*.bl_gallery_row__sq > a > img {*/
-/*    width: 20vw;*/
-/*    height: 20vw;*/
-/*}*/
-
-/*.bl_gallery_row {*/
-/*    margin-bottom: 2vw;*/
-/*}*/
-
-/*.bl_gallery_row__h_auto > a > img {*/
-/*    height: auto!important;*/
-/*}*/
-
-/*.bl_gallery_row_l > a > img {*/
-/*    width: 20vw;*/
-/*}*/
-
 .hp__flow {
     animation: float_animation 3s linear infinite;
     transform-origin: 50% 50%;
@@ -219,4 +204,14 @@ body {
     33.33333% { transform: translateY(-10px) }
     66.66667% { transform: translateY(0) }
     100% { transform: translateY(0) }
+}
+
+.modal > a {
+    vertical-align: sub;
+}
+
+.modal > img {
+    width: 80%;
+    display: flex;
+    justify-content: center;
 }
