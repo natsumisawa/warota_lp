@@ -1,9 +1,26 @@
 body {
     background-color: #00056c;
-}
-p {
-    text-align: center;
+    font-family: Noto Sans JP,sans-serif, YuGothic,'Yu Gothic', Osaka, sans-serif, Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+    letter-spacing: .2em;
+    line-height: 30px;
+    font-weight: 300;
     color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem!important;
+}
+
+/* sp */
+@media screen and (max-width:640px){
+    p {
+        font-size: .5rem!important;
+    }
+
+    h1 {
+        font-size: 1rem!important;
+    }
 }
 
 #modal-01 {
@@ -152,11 +169,32 @@ p {
     margin: 2vw;
 }
 
-.profile_cont > p > img {
-    margin: 2vw;
+.profile_cont > div {
     width: 13vw;
     height: auto;
-    /*min-width: 141px;*/
+    white-space: nowrap;
+    vertical-align: center;
+    margin-top: 2vw;
+}
+
+.profile_cont > div > h1 {
+    margin-bottom: 10px;
+}
+
+.for-sp {
+    display: none;
+}
+
+
+/* sp */
+@media screen and (max-width:640px) {
+    .for-sp {
+        display: block;
+    }
+
+    .for-pc {
+        display: none;
+    }
 }
 
 .bl_gallery_cont {
@@ -172,21 +210,13 @@ p {
 
 .bl_gallery_row {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 4vw
-}
-
-.bl_gallery_row__f_sa {
-    display: flex;
-    justify-content: space-around;
-}
-
-.bl_gallery_row__m_0 {
-    margin: 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .bl_gallery_row > a > img {
-    width: 20vw;
+    width: 20vh;
 }
 
 .bl_gallery_row__h_20 > a > img {
