@@ -23,24 +23,6 @@ h1 {
     }
 }
 
-#modal-01 {
-    text-align: center;
-    opacity: 1;
-    color: black;
-    padding: 10vh;
-}
-
-.close-modal-01 {
-    width: 3vw;
-    padding: 40px;
-}
-
-.close-modal-01:hover {
-    transform: rotate(90deg);
-    transition: all 0.2s;
-    cursor: pointer;
-}
-
 /* ========
     header
    ======== */
@@ -164,8 +146,8 @@ h1 {
 }
 
 .profile_cont > img, .profile_cont > a > img {
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: 4vw;
     margin: 2vw;
 }
 
@@ -244,4 +226,14 @@ h1 {
     width: 80%;
     display: flex;
     justify-content: center;
+}
+
+.modal {
+    color: #000000;
+}
+
+.bl_gallery_row > a:hover {
+    transform: rotate(360deg);
+    transition: all 0.2s;
+    cursor: pointer;
 }
